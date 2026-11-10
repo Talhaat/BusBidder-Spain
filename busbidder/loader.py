@@ -6,8 +6,8 @@ import random
 
 from models import Destination
 
-#Folder locations
-data_folder = os.path.dirname(os.path.abspath(__file__))
+#Folder locations: the csv files live in data/, next to the busbidder/ code folder
+data_folder = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"))
 destination_path = os.path.join(data_folder, "destination.csv")
 map_destination_path = os.path.join(data_folder, "map_destination.csv")
 company_path = os.path.join(data_folder, "company_profile.csv")

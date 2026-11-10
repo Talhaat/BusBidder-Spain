@@ -26,7 +26,19 @@ Marketplace -> offers -> TravelRequest removes unacceptable offers
 
 - Offers: generate once and save to `offers.csv`, then load + validate every run
   (recommended, matches Task 2), or keep calculating them live?
-- Duplicate `Company` in `marketplace/marketplace.py`: replace with the `Marketplace` class.
+- `Marketplace` class goes in `busbidder/marketplace.py` (the old duplicate `Company` there was removed).
+
+## Folders
+
+| Folder | Holds |
+|---|---|
+| `main.py` | entry point: `uv run main.py` |
+| `busbidder/` | all program code, `gui/` inside |
+| `data/` | csv input files (`destination.csv`, `company_profile.csv`) and generated + saved files |
+| `tests/` | automated tests (later) and `tests/data/` with deliberately broken csv files |
+| `tools/` | `debug.py` for manual checks |
+| `output/` | example output for the report: logs, rankings, screenshots |
+| `report/` | this sketch, flowchart, tables |
 
 ## Build order
 

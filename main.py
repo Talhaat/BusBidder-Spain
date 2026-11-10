@@ -2,8 +2,9 @@ import sys
 import os
 import logging
 
-data_folder = os.path.join(os.path.dirname(__file__), "mark_setting", "data")
-sys.path.append(data_folder)
+# Let Python find the program code in the busbidder/ folder
+code_folder = os.path.join(os.path.dirname(__file__), "busbidder")
+sys.path.append(code_folder)
 
 # Write important events and rejected data rows to busbidder.log
 log_path = os.path.join(os.path.dirname(__file__), "busbidder.log")
