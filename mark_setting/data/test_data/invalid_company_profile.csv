@@ -1,0 +1,20 @@
+company,description,min_price,max_price,start_time,end_time,luggage,buses_per_day,speed_kmh
+GoodBus,Valid row,10,25,06:00,14:00,1,10,80
+NegativeBus,Negative price,-5,25,06:00,14:00,1,10,80
+SwappedBus,Min price above max price,30,20,06:00,14:00,1,10,80
+BadTimeBus,Time 24:00 does not exist,10,25,24:00,06:00,1,10,80
+WrongFormatBus,Time written without colon,10,25,0600,14:00,1,10,80
+,Missing company name,10,25,06:00,14:00,1,10,80
+TextPriceBus,Price written as text,ten,25,06:00,14:00,1,10,80
+ZeroBusesBus,No buses per day,10,25,06:00,14:00,1,0,80
+NegativeBusesBus,Negative number of buses,10,25,06:00,14:00,1,-2,80
+TextBusesBus,Number of buses written as text,10,25,06:00,14:00,1,five,80
+HalfBusBus,Number of buses not a whole number,10,25,06:00,14:00,1,2.5,80
+MissingBusesBus,Number of buses missing,10,25,06:00,14:00,1,,80
+ZeroSpeedBus,Speed is zero,10,25,06:00,14:00,1,10,0
+NegativeSpeedBus,Negative speed,10,25,06:00,14:00,1,10,-50
+TextSpeedBus,Speed written as text,10,25,06:00,14:00,1,10,fast
+MissingSpeedBus,Speed missing,10,25,06:00,14:00,1,10,
+NightBus,Valid overnight window (boundary),12,28,22:00,06:00,1,5,80
+EdgeBus,Valid boundary values: free ticket and 00:00-23:59,0,0,00:00,23:59,1,10,80
+OneBusBus,Valid boundary: only one bus per day,10,25,06:00,14:00,1,1,80

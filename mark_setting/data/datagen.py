@@ -76,6 +76,10 @@ def generate_data():
     # Assign any destination with no company to whichever company has the nearest point
     routes.assign_unassigned_destinations(connections, destinations, coordinates, madrid_x, madrid_y)
 
+    # Give each Company object its own list of the destinations it serves
+    for company in companies:
+        company.destinations = connections.get(company.name, [])
+
     # Generate or load destination profiles, save to destination_profile.csv
     destination_profiles = loader.load_or_generate_destination_profiles(destinations, destination_categories)
     loader.save_destination_profiles(destination_profiles)

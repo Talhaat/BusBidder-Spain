@@ -1,0 +1,25 @@
+% Table of the functions called by generate_data() in datagen.py, in the order they run.
+% Needs in the preamble:  \usepackage{booktabs}  \usepackage{tabularx}
+% Fill in the Description column yourself.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabularx}{\textwidth}{@{}c >{\raggedright\arraybackslash}p{4.6cm} >{\raggedright\arraybackslash}p{2.0cm} X@{}}
+    \toprule
+    \textbf{Step} & \textbf{Function} & \textbf{Location} & \textbf{Description} \\
+    \midrule
+    1 & \texttt{load\_destinations()} & \texttt{loader.py} & \\
+    2 & \texttt{load\_companies()} & \texttt{models.py} & \\
+    3 & \texttt{load\_or\_generate\_\allowbreak connections()} & \texttt{loader.py} & \\
+    4 & \texttt{save\_connections()} & \texttt{loader.py} & \\
+    5 & \texttt{load\_or\_generate\_\allowbreak coordinates()} & \texttt{loader.py} & \\
+    6 & \texttt{assign\_unassigned\_\allowbreak destinations()} & \texttt{routes.py} & \\
+    7 & \texttt{load\_or\_generate\_\allowbreak destination\_profiles()} & \texttt{loader.py} & \\
+    8 & \texttt{save\_destination\_\allowbreak profiles()} & \texttt{loader.py} & \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Functions called by \texttt{generate\_data()} in \texttt{datagen.py}, in the order they run.}
+  \label{tab:generate-data}
+\end{table}

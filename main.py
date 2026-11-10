@@ -1,8 +1,13 @@
 import sys
 import os
+import logging
 
 data_folder = os.path.join(os.path.dirname(__file__), "mark_setting", "data")
 sys.path.append(data_folder)
+
+# Write important events and rejected data rows to busbidder.log
+log_path = os.path.join(os.path.dirname(__file__), "busbidder.log")
+logging.basicConfig(filename=log_path, level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
 from gui.bus_gui import run
 

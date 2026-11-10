@@ -86,4 +86,18 @@ def show_map(connections, coordinates, madrid_x, madrid_y, company_colors, canva
         canvas.tag_bind(destination, "<Enter>", lambda event, d=destination: highlight_station(d))
         canvas.tag_bind(destination, "<Leave>", reset_routes)
 
+    #Draw the legend in the top right corner: one coloured line plus name per company
+    legend_x = canvas_width - 220
+    legend_y = 20
+    row_height = 25
+    canvas.create_rectangle(
+        legend_x - 10, legend_y - 10, canvas_width - 20, legend_y + 30 + len(connections) * row_height,
+        fill=canvas_background, outline=weak_color
+    )
+    canvas.create_text(legend_x, legend_y + 5, text="Companies", fill="white", anchor="w")
+    for index, company in enumerate(connections):
+        y = legend_y + 35 + index * row_height
+        canvas.create_line(legend_x, y, legend_x + 30, y, fill=company_colors.get(company, "white"), width=4)
+        canvas.create_text(legend_x + 40, y, text=company, fill="white", anchor="w")
+
     window.mainloop()

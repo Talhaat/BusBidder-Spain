@@ -3,6 +3,7 @@
 import customtkinter as ctk
 
 import datagen
+import journey
 import loader
 import price
 from gui.map_view import show_map
@@ -66,6 +67,13 @@ def run():
         finish_picker = ctk.CTkOptionMenu(finish_column, values=all_points)
         finish_picker.pack(pady=5)
 
+        time_column = ctk.CTkFrame(pickers_row, fg_color="transparent")
+        time_column.pack(side="left", padx=10)
+        ctk.CTkLabel(time_column, text="Time").pack()
+        time_picker = ctk.CTkOptionMenu(time_column, values=[f"{hour:02d}:00" for hour in range(24)])
+        time_picker.set("08:00")
+        time_picker.pack(pady=5)
+
         results_frame = ctk.CTkFrame(content)
         results_frame.pack(pady=10, fill="both", expand=True)
 
@@ -77,22 +85,45 @@ def run():
 
             start = start_picker.get()
             finish = finish_picker.get()
+            travel_time = time_picker.get()
             options = price.get_route_options(
-                start, finish, data["connections"], data["coordinates"],
-                data["madrid_x"], data["madrid_y"], data["companies"]
+                start, finish, data["coordinates"],
+                data["madrid_x"], data["madrid_y"], data["companies"], travel_time
             )
+            options = journey.filter_by_time(options, travel_time)
 
-            if not options:
-                ctk.CTkLabel(results_frame, text="No companies serve this route").pack()
+            if options:
+                for offer in options:
+                    ctk.CTkLabel(results_frame, text=str(offer)).pack(anchor="w")
                 return
 
-            for company_name, option_price in options:
-                ctk.CTkLabel(results_frame, text=f"{company_name}: {option_price} EUR").pack(anchor="w")
+            transfers = journey.get_transfer_options(
+                start, finish, data["coordinates"],
+                data["madrid_x"], data["madrid_y"], data["companies"], travel_time
+            )
+            transfers = journey.filter_by_time(transfers, travel_time)
+
+            if not transfers:
+                ctk.CTkLabel(results_frame, text="No bus on this route at this time").pack()
+                return
+
+            ctk.CTkLabel(results_frame, text="No direct bus - recommended transfers via Madrid:").pack(anchor="w")
+            for offer in sorted(transfers, key=lambda offer: offer.price):
+                ctk.CTkLabel(results_frame, text=str(offer)).pack(anchor="w")
 
         ctk.CTkButton(content, text="Find buses", command=find_buses).pack(pady=10)
 
+    #Function to show the bus companies and their profiles
+    def show_companies_page():
+        clear_content()
+
+        for company in data["companies"]:
+            ctk.CTkLabel(content, text=f"{company.name}: {company.profile.description} (Price range: {company.profile.min_price}-{company.profile.max_price} EUR)").pack(anchor="w", pady=5)
+
     ctk.CTkButton(sidebar, text="Map", command=open_map).pack(pady=10, padx=10)
     ctk.CTkButton(sidebar, text="Bus Search", command=show_search_page).pack(pady=10, padx=10)
+    ctk.CTkButton(sidebar, text="Bus Companies", command=show_companies_page).pack(pady=10, padx=10)
+
 
     window.mainloop()
 

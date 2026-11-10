@@ -1,0 +1,8 @@
+[project]
+name = "busbidder-spain"
+version = "0.1.0"
+description = "BusBidder Spain"
+requires-python = ">=3.14"
+dependencies = [
+    "customtkinter>=5.2.2",
+]

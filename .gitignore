@@ -1,4 +1,5 @@
 __pycache__/
 *.pyc
-.-1/
-./CHANGELOG.md
+-1
+CHANGELOG.md
+busbidder.log

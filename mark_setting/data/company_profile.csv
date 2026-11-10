@@ -1,6 +1,6 @@
-company,description,min_price,max_price
-SolRuta,Low-cost daytime services,10,25
-Camino Express,Fast direct connections between major cities,20,45
-CostaLink,Strong coverage of coastal destinations,15,35
-VerdeBus,Environment-focused services and modern vehicles,18,40
-NocheVia,Overnight and late-evening services,12,28
+company,description,min_price,max_price,start_time,end_time,luggage,buses_per_day,speed_kmh
+SolRuta,Low-cost daytime services,10,25,06:00,14:00,0,10,70
+Camino Express,Fast direct connections between major cities,20,45,08:30,21:00,1,10,100
+CostaLink,Strong coverage of coastal destinations,15,35,12:00,19:00,1,10,80
+VerdeBus,Environment-focused services and modern vehicles,18,40,06:30,20:30,1,10,75
+NocheVia,Overnight and late-evening services,12,28,00:00,06:00,1,10,85
