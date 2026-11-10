@@ -1,16 +1,12 @@
-# Validation - checks rows from the csv files before they become objects
+# File for checking csv rows before they become objects
 
 import re
 
 from exceptions import MissingValueError, NegativePriceError, InvalidPriceRangeError, InvalidTimeError, InvalidBusCountError, InvalidSpeedError
 
-#Regex for a time written as HH:MM, from 00:00 to 23:59
+# Regex for a time written as HH:MM, from 00:00 to 23:59
 time_pattern = re.compile(r"^([01][0-9]|2[0-3]):[0-5][0-9]$")
 
-
-#Function to check one row from company_profile.csv
-# Input is a csv row dict, return is none.
-# Raises a DataError subclass if the row is invalid, or ValueError if a number is not a number.
 def validate_company_row(row):
     for column in ["company", "description", "min_price", "max_price", "start_time", "end_time", "buses_per_day", "speed_kmh"]:
         if not row.get(column):

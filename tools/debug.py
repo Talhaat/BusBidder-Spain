@@ -1,4 +1,4 @@
-# Code to debug - run from the project folder with: uv run python tools/debug.py
+# File to debug, run from the project folder with: uv run python tools/debug.py
 import csv
 import os
 import sys
@@ -10,14 +10,13 @@ sys.path.append(os.path.join(project_folder, "busbidder"))
 import loader
 import models
 
-
-with open(loader.destination_path, mode='r', newline='', encoding='utf-8') as file:
+with open(loader.dest_path, mode='r', newline='', encoding='utf-8') as file:
     reader = csv.reader(file)
     total_destinations = list(reader)
 print(total_destinations)
 
 dest_used = set()
-with open(loader.connections_path, newline="",encoding='utf-8') as file:
+with open(loader.conn_path, newline="",encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
         dest_used.update(row["destinations"].split(";"))

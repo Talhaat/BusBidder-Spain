@@ -1,3 +1,5 @@
+# File to start the app: uv run main.py
+
 import sys
 import os
 import logging

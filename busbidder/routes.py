@@ -1,10 +1,7 @@
-# Routes - minimum spanning tree and unassigned destination handling
+# File for the minimum spanning tree and unassigned destinations
 
 import math
 
-
-#Function to build a minimum spanning tree connecting a set of named points
-# Input is dict of name to (x, y), return list of (name1, name2) edges with no crossings back and forth.
 def minimum_spanning_tree(points):
     names = list(points.keys())
     connected = {names[0]}
@@ -28,9 +25,6 @@ def minimum_spanning_tree(points):
 
     return edges
 
-
-#Function to attach destinations with no company to whichever company has the nearest point
-# Input is connections dict, list of all destinations, coordinates dict, Madrid's x and y. Changes connections in place.
 def assign_unassigned_destinations(connections, destinations, coordinates, madrid_x, madrid_y):
     assigned_destinations = set()
     for served_destinations in connections.values():
