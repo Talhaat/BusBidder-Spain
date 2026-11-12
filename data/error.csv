@@ -1,0 +1,50 @@
+file,line,company,error
+invalid_company_profile.csv,3,NegativeBus,"price is negative (min -5.0, max 25.0)"
+invalid_company_profile.csv,4,SwappedBus,min_price 30.0 is higher than max_price 20.0
+invalid_company_profile.csv,5,BadTimeBus,start_time '24:00' is not a valid HH:MM time
+invalid_company_profile.csv,6,WrongFormatBus,start_time '0600' is not a valid HH:MM time
+invalid_company_profile.csv,7,,'company' is missing
+invalid_company_profile.csv,8,TextPriceBus,could not convert string to float: 'ten'
+invalid_company_profile.csv,9,ZeroBusesBus,"buses_per_day is 0, must be at least 1"
+invalid_company_profile.csv,10,NegativeBusesBus,"buses_per_day is -2, must be at least 1"
+invalid_company_profile.csv,11,TextBusesBus,invalid literal for int() with base 10: 'five'
+invalid_company_profile.csv,12,HalfBusBus,invalid literal for int() with base 10: '2.5'
+invalid_company_profile.csv,13,MissingBusesBus,'buses_per_day' is missing
+invalid_company_profile.csv,14,ZeroSpeedBus,"speed_kmh is 0.0, must be above 0"
+invalid_company_profile.csv,15,NegativeSpeedBus,"speed_kmh is -50.0, must be above 0"
+invalid_company_profile.csv,16,TextSpeedBus,could not convert string to float: 'fast'
+invalid_company_profile.csv,17,MissingSpeedBus,'speed_kmh' is missing
+invalid_company_profile.csv,3,NegativeBus,"price is negative (min -5.0, max 25.0)"
+invalid_company_profile.csv,4,SwappedBus,min_price 30.0 is higher than max_price 20.0
+invalid_company_profile.csv,5,BadTimeBus,start_time '24:00' is not a valid HH:MM time
+invalid_company_profile.csv,6,WrongFormatBus,start_time '0600' is not a valid HH:MM time
+invalid_company_profile.csv,7,,'company' is missing
+invalid_company_profile.csv,8,TextPriceBus,could not convert string to float: 'ten'
+invalid_company_profile.csv,9,ZeroBusesBus,"buses_per_day is 0, must be at least 1"
+invalid_company_profile.csv,10,NegativeBusesBus,"buses_per_day is -2, must be at least 1"
+invalid_company_profile.csv,11,TextBusesBus,invalid literal for int() with base 10: 'five'
+invalid_company_profile.csv,12,HalfBusBus,invalid literal for int() with base 10: '2.5'
+invalid_company_profile.csv,13,MissingBusesBus,'buses_per_day' is missing
+invalid_company_profile.csv,14,ZeroSpeedBus,"speed_kmh is 0.0, must be above 0"
+invalid_company_profile.csv,15,NegativeSpeedBus,"speed_kmh is -50.0, must be above 0"
+invalid_company_profile.csv,16,TextSpeedBus,could not convert string to float: 'fast'
+invalid_company_profile.csv,17,MissingSpeedBus,'speed_kmh' is missing
+invalid_company_profile.csv,3,NegativeBus,"price is negative (min -5.0, max 25.0)"
+invalid_company_profile.csv,4,SwappedBus,min_price 30.0 is higher than max_price 20.0
+invalid_company_profile.csv,5,BadTimeBus,start_time '24:00' is not a valid HH:MM time
+invalid_company_profile.csv,6,WrongFormatBus,start_time '0600' is not a valid HH:MM time
+invalid_company_profile.csv,7,,'company' is missing
+invalid_company_profile.csv,8,TextPriceBus,could not convert string to float: 'ten'
+invalid_company_profile.csv,9,ZeroBusesBus,"buses_per_day is 0, must be at least 1"
+invalid_company_profile.csv,10,NegativeBusesBus,"buses_per_day is -2, must be at least 1"
+invalid_company_profile.csv,11,TextBusesBus,invalid literal for int() with base 10: 'five'
+invalid_company_profile.csv,12,HalfBusBus,invalid literal for int() with base 10: '2.5'
+invalid_company_profile.csv,13,MissingBusesBus,'buses_per_day' is missing
+invalid_company_profile.csv,14,ZeroSpeedBus,"speed_kmh is 0.0, must be above 0"
+invalid_company_profile.csv,15,NegativeSpeedBus,"speed_kmh is -50.0, must be above 0"
+invalid_company_profile.csv,16,TextSpeedBus,could not convert string to float: 'fast'
+invalid_company_profile.csv,17,MissingSpeedBus,'speed_kmh' is missing
+invalid_company_profile.csv,18,ZeroSeatsBus,"max_seats is 0, must be at least 1"
+invalid_company_profile.csv,19,NegativeSeatsBus,"max_seats is -5, must be at least 1"
+invalid_company_profile.csv,20,TextSeatsBus,invalid literal for int() with base 10: 'many'
+invalid_company_profile.csv,21,MissingSeatsBus,'max_seats' is missing

@@ -10,7 +10,7 @@ the Task 1 section of the report (class diagram + justification).
 | `Company` | prices trips on its own route tree (`price_between`) | has a `Profile`, list of its destinations | done |
 | `Profile` | description, price range, time window, buses per day, speed; answers `runs_at`, makes `departure_times()`, `minutes_until_next_bus()` | - | done |
 | `Destination` | name + categories (coastal, historic, ...) | - | exists, not used yet |
-| `Offer` | one trip a traveller can buy | one or two `Company` objects, start, finish, price, transfers, departure, arrival, wait in Madrid | done, needs date, seats, flexibility |
+| `Offer` | one trip a traveller can buy; read from / written to `offers.csv` (`from_dict`, `to_row`) | offer id, one or two `Company` objects, start, finish, departure + arrival (date and time), price, fare (Basic/Flex), changeable, refundable, seats, transfers, wait in Madrid | done (rating not yet) |
 | `Marketplace` | holds everything, loads/creates offers | companies, destinations, offers | planned |
 | `TravelRequest` | hard constraints: from, to, date, budget, max transfers | checks an `Offer` | planned |
 | `TravellerProfile` | ranking weights (budget, business, flexible) | - | planned |
@@ -24,8 +24,10 @@ Marketplace -> offers -> TravelRequest removes unacceptable offers
 
 ## Open decisions
 
-- Offers: generate once and save to `offers.csv`, then load + validate every run
-  (recommended, matches Task 2), or keep calculating them live?
+- Decided (2026-11-11): offers are generated once (`offer_gen.py`), saved to `data/offers.csv`,
+  then loaded + validated on every run. 7 days (12-18 July 2026), every bus in the timetable,
+  two fare types (Basic; Flex = +20 %, changeable + refundable), free seats split between them.
+  0 seats is valid (full bus, Task 3 filter removes it). Transfers still only in Madrid.
 - `Marketplace` class goes in `busbidder/marketplace.py` (the old duplicate `Company` there was removed).
 
 ## Folders
@@ -44,7 +46,7 @@ Marketplace -> offers -> TravelRequest removes unacceptable offers
 
 1. Task 2 basics: `exceptions.py`, logging, validate company + destination CSVs
    (done: exceptions, logging, company CSV + test file; left: destinations/connections)
-2. `offers.csv`: generate, load, validate; `Offer` gets date, times, seats, flexibility
+2. `offers.csv`: generate, load, validate; `Offer` gets date, times, seats, flexibility (done)
 3. `Marketplace` class
 4. Task 3: `TravelRequest` + filtering
 5. Task 5: `Ranker` + decorator registry

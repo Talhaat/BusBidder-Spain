@@ -2,9 +2,6 @@
 
 import math
 
-from offer import Offer
-from time_utils import to_minutes
-
 def price_from_distance(distance, min_distance, max_distance, min_price, max_price):
     # No range to scale across (e.g. only one possible path)
     if min_distance == max_distance:
@@ -34,19 +31,3 @@ def path_distance(start, finish, points, edges):
                 queue.append((neighbor, total + edge_distance))
 
     return None
-
-def get_route_options(start, finish, coordinates, madrid_x, madrid_y, companies, travel_time):
-    if start == finish:
-        return []
-
-    start_minutes = to_minutes(travel_time)
-    options = []
-    for company in companies:
-        company_price = company.price_between(start, finish, coordinates, madrid_x, madrid_y)
-        if company_price is not None:
-            # Take the company's first bus at or after the chosen time
-            departure = start_minutes + company.profile.minutes_until_next_bus(start_minutes)
-            arrival = departure + company.travel_minutes(start, finish, coordinates, madrid_x, madrid_y)
-            options.append(Offer([company], start, finish, company_price, departure, arrival))
-    return options
-

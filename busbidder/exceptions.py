@@ -33,7 +33,7 @@ class UnknownDestinationError(DataError):
     pass
 
 class InvalidDateError(DataError):
-    # A date that does not exist or has the wrong format, like 2026-07-32
+    # A day that does not exist, like day 8 of a 7-day week
     pass
 
 class ArrivalBeforeDepartureError(DataError):
@@ -46,4 +46,24 @@ class InvalidRatingError(DataError):
 
 class NoSeatsError(DataError):
     # An offer with zero or fewer available seats
+    pass
+
+class InvalidSeatCountError(DataError):
+    # An impossible number of seats, like max_seats 0 or an offer with -5 seats
+    pass
+
+class InvalidOfferIdError(DataError):
+    # An offer id that doesn't look like SOL-00001, like SOL-2026-1
+    pass
+
+class UnknownCompanyError(DataError):
+    # A company name that is not in company_profile.csv, like "FastBus"
+    pass
+
+class InvalidFareError(DataError):
+    # changeable or refundable that is not True or False, like "maybe"
+    pass
+
+class InvalidLuggageError(DataError):
+    # A luggage value that is not 0 or 1, like 2 or "yes"
     pass

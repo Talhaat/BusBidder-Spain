@@ -29,16 +29,16 @@ destination_categories = {
 
 # How many destinations each company should have. Companies not listed here get 5.
 destination_counts = {
-    "SolRuta": 8,
-    "Camino Express": 3,
-    "CostaLink": 6,
-    "VerdeBus": 4,
-    "NocheVia": 5,
+    "SolRuta": 12,
+    "Camino Express": 6,
+    "CostaLink": 13,
+    "VerdeBus": 10,
+    "NocheVia": 10,
 }
 
 # Destinations that must be included for a company, counted towards total destination_counts
 custom_destinations = {
-    "CostaLink": ["Granada", "Valencia", "Santiago de Compostela", "Malaga", "Salamanca", "Seville"]
+    "CostaLink": ["Valencia", "Salamanca", "Malaga", "Bilbao", "Alicante"]
 }
 
 # One line colour per company, for the map
@@ -75,6 +75,10 @@ def generate_data():
     for company in companies:
         company.destinations = connections.get(company.name, [])
 
+    # Generate or load every offer (with its free seats), save to offers.csv
+    places = ["Madrid"] + destinations
+    offers = loader.load_or_gen_offers(companies, places, coordinates, madrid_x, madrid_y)
+
     # Generate or load destination profiles, save to destination_profile.csv
     destination_profiles = loader.load_or_gen_profiles(destinations, destination_categories)
     loader.save_profiles(destination_profiles)
@@ -90,6 +94,7 @@ def generate_data():
         "canvas_width": canvas_width,
         "canvas_height": canvas_height,
         "destination_profiles": destination_profiles,
+        "offers": offers,
     }
 
 if __name__ == "__main__":

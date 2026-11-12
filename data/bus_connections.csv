@@ -1,6 +1,6 @@
 company,destinations
-SolRuta,Valencia;Cordoba;San Sebastian;Barcelona;Murcia;Santiago de Compostela;Cadiz;Zaragoza
-Camino Express,Bilbao;Malaga;Santiago de Compostela
-CostaLink,Granada;Valencia;Santiago de Compostela;Malaga;Salamanca;Seville
-VerdeBus,Santiago de Compostela;Valencia;Murcia;Cadiz
-NocheVia,Alicante;Toledo;Valencia;Seville;Malaga
+SolRuta,Santiago de Compostela;Barcelona;Granada;Murcia;Seville;San Sebastian;Cadiz;Zaragoza;Salamanca;Cordoba;Bilbao;Malaga
+Camino Express,Murcia;Salamanca;Zaragoza;Alicante;Valencia;Bilbao
+CostaLink,Granada;Valencia;Santiago de Compostela;Malaga;Salamanca;Seville;Barcelona;Cadiz;Zaragoza;Murcia;Toledo;San Sebastian;Alicante
+VerdeBus,Cadiz;Seville;Murcia;San Sebastian;Salamanca;Santiago de Compostela;Cordoba;Malaga;Barcelona;Alicante
+NocheVia,Granada;San Sebastian;Murcia;Valencia;Salamanca;Toledo;Malaga;Cordoba;Seville;Bilbao

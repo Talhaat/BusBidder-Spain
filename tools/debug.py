@@ -44,3 +44,10 @@ print("Accepted from test file:", [company.name for company in test_companies])
 print("\n")
 for company in models.load_companies(loader.company_path) + test_companies:
     print(company.name, company.profile.departure_times())
+
+# Test offer validation with the broken offers file: only the valid rows should load
+print("\n")
+offers_test_path = os.path.join(project_folder, "tests", "data", "invalid_offers.csv")
+places = ["Madrid"] + loader.load_destinations()
+test_offers = loader.load_offers(offers_test_path, models.load_companies(loader.company_path), places)
+print("Accepted from offers test file:", [offer.offer_id for offer in test_offers])

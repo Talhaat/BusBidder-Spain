@@ -1,0 +1,29 @@
+offer_id,company,start,finish,departure,arrival,price,changeable,refundable,seats,description
+SOL-00001,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,5,Valid row
+SOL-00002,SolRuta,Madrid,Zaragoza,08:00,09:40,14.2,True,True,3,Valid row that can be changed and refunded
+SOL-00003,SolRuta,Madrid,Zaragoza,10:00,11:40,14.2,False,False,0,Full bus: 0 seats is allowed
+SOL-00004,SolRuta,Madrid,Zaragoza,12:00,13:40,14.2,False,False,15,Seats equal to SolRuta's max_seats (15)
+SOL-00005,SolRuta,Madrid,Zaragoza,22:19,23:59,14.2,False,False,5,Arrives at 23:59: the last minute of the day
+SOL-00006,SolRuta,Madrid,Zaragoza,14:00,15:40,0,False,False,5,Free ticket: price 0
+,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,5,Offer id missing
+SOL-2026-1,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,5,Offer id in the wrong format
+sol-00009,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,5,Offer id in small letters
+FAS-00010,FastBus,Madrid,Zaragoza,06:00,07:40,14.2,False,False,5,Company not in company_profile.csv
+SOL-00011,SolRuta,Madird,Zaragoza,06:00,07:40,14.2,False,False,5,Start city misspelled
+SOL-00012,SolRuta,Madrid,Paris,06:00,07:40,14.2,False,False,5,Finish city not a destination
+SOL-00013,SolRuta,Madrid,Zaragoza,25:00,26:40,14.2,False,False,5,Time that does not exist
+SOL-00014,SolRuta,Madrid,Zaragoza,0600,0740,14.2,False,False,5,Time written without colon
+SOL-00015,SolRuta,Madrid,Zaragoza,2026-07-12 06:00,2026-07-12 07:40,14.2,False,False,5,Time with a date in front
+SOL-00016,SolRuta,Madrid,Zaragoza,10:00,09:00,14.2,False,False,5,Arrival before departure
+SOL-00017,SolRuta,Madrid,Zaragoza,10:00,10:00,14.2,False,False,5,Arrival at the same time as departure
+SOL-00018,SolRuta,Madrid,Zaragoza,23:30,01:10,14.2,False,False,5,Arrives after midnight
+SOL-00019,SolRuta,Madrid,Zaragoza,06:00,07:40,-5,False,False,5,Negative price
+SOL-00020,SolRuta,Madrid,Zaragoza,06:00,07:40,cheap,False,False,5,Price written as text
+SOL-00021,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,maybe,False,5,changeable not True or False
+SOL-00022,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,yes,5,refundable written as yes
+SOL-00023,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,-3,Negative seats
+SOL-00024,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,full,Seats written as text
+SOL-00025,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,16,More seats than SolRuta's max_seats (15)
+SOL-00026,SolRuta,Madrid,Zaragoza,06:00,07:40,14.2,False,False,2.5,Seats not a whole number
+SOL-00027,SolRuta,Madrid,Zaragoza,06:00,07:40,,False,False,5,Price missing
+SOL-00028,SolRuta,Madrid,Zaragoza

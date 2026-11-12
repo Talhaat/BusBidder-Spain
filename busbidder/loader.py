@@ -3,7 +3,14 @@
 import os
 import random
 import csv
-from models import Destination
+import logging
+
+import validation
+from exceptions import DataError
+from models import Destination, Offer
+from offers import make_offer
+
+logger = logging.getLogger(__name__)
 
 code_folder = os.path.dirname(os.path.abspath(__file__))
 project_folder = os.path.dirname(code_folder)
@@ -15,7 +22,9 @@ map_dest_path = os.path.join(data_folder, "map_destination.csv")
 company_path = os.path.join(data_folder, "company_profile.csv")
 conn_path = os.path.join(data_folder, "bus_connections.csv")
 prof_path = os.path.join(data_folder, "destination_profile.csv")
+offers_path = os.path.join(data_folder, "offers.csv")
 
+#---------------------------DESTINATIONS-------------------------------------------
 def load_destinations():
     places = []
     with open(dest_path, newline="") as f:
@@ -24,14 +33,33 @@ def load_destinations():
             places.append(row["destination"])
     return places
 
-def load_companies():
-    companies = []
-    with open(company_path, newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            companies.append(row["company"])
-    return companies
+def load_or_gen_profiles(names, categories):
+    
+    profiles = {}
 
+    if os.path.exists(prof_path):
+        with open(prof_path, newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                dest = Destination.from_dict(row)
+                profiles[dest.name] = dest
+        return profiles
+
+    # Build from categories
+    for n in names:
+        cats = categories.get(n, [])
+        profiles[n] = Destination(n, cats)
+    return profiles
+
+def save_profiles(profs):
+    with open(prof_path, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["destination", "categories"])
+        for name, dest in profs.items():
+            writer.writerow(dest.to_row())
+#---------------------------DESTINATIONS-------------------------------------------
+
+#---------------------------MAP------------------------------------------
 def load_or_gen_conn(companies, destinations, dest_counts, custom_dests):
     conn_map = {}
 
@@ -95,28 +123,44 @@ def save_coords(coords):
         writer.writerow(["destination", "x", "y"])
         for name, (x, y) in coords.items():
             writer.writerow([name, x, y])
+#---------------------------MAP-------------------------------------------
 
-def load_or_gen_profiles(names, categories):
-    
-    profiles = {}
 
-    if os.path.exists(prof_path):
-        with open(prof_path, newline="") as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                dest = Destination.from_dict(row)
-                profiles[dest.name] = dest
-        return profiles
+#---------------------------OFFERS-------------------------------------------
 
-    # Build from categories
-    for n in names:
-        cats = categories.get(n, [])
-        profiles[n] = Destination(n, cats)
-    return profiles
+def load_or_gen_offers(companies, places, coordinates, madrid_x, madrid_y):
+    # Use the saved file, so seats and times stay the same between runs
+    if os.path.exists(offers_path):
+        return load_offers(offers_path, companies, places)
 
-def save_profiles(profs):
-    with open(prof_path, "w", newline="") as f:
+    offers = make_offer(companies, coordinates, madrid_x, madrid_y)
+    save_offers(offers)
+    return offers
+
+def load_offers(path, companies, places):
+    by_name = {}
+    for company in companies:
+        by_name[company.name] = company
+
+    offers = []
+    with open(path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Bad rows are logged and skipped, the rest of the file still loads
+            try:
+                validation.validate_offer_row(row, by_name, places)
+            except (DataError, ValueError) as error:
+                logger.warning(f"{os.path.basename(path)} line {reader.line_num}: rejected {row.get('offer_id')!r}: {error}")
+                validation.save_error(error, os.path.basename(path), reader.line_num, row)
+                continue
+            offers.append(Offer.from_dict(row, by_name))
+    logger.info(f"Loaded {len(offers)} offers from {os.path.basename(path)}")
+    return offers
+
+def save_offers(offers):
+    with open(offers_path, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["destination", "categories"])
-        for name, dest in profs.items():
-            writer.writerow(dest.to_row())
+        writer.writerow(validation.offer_columns)
+        for offer in offers:
+            writer.writerow(offer.to_row())
+#---------------------------OFFERS-------------------------------------------
