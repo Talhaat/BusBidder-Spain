@@ -35,6 +35,10 @@ def trip_offer(company,
     arr = dep + company.travel_minutes(start, finish, coords, madrid_x, madrid_y)
 
     price = company.price_between(start, finish,coords, madrid_x, madrid_y)
+    # Rush hours cost 20 % more, so buses of the same company and trip get different prices
+    clock = dep % (24 * 60)
+    if 7 * 60 <= clock < 9 * 60 or 16 * 60 <= clock < 18 * 60:
+        price = round(price * 1.2, 2)
     seats = random.randint(0, company.profile.max_seats)
 
     return Offer(

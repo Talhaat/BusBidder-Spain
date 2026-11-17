@@ -10,21 +10,21 @@ canvas_height = 2000
 #---------------------------DICT-------------------------------------------
 # Categories for each destination. Destinations not listed here get no categories. Maybe delete?
 destination_categories = {
-    "Barcelona": ["major city"],
+    "Barcelona": ["major city", "coastal"],
     "Cordoba": ["small town", "historic"],
     "Murcia": ["city"],
-    "Valencia": ["major city", "beach", "coastal"],
-    "Bilbao": ["city"],
-    "Salamanca": ["small town", "historic", "coastal"],
-    "Seville": ["major city", "historic", "coastal"],
-    "San Sebastian": ["city", "beach"],
+    "Valencia": ["major city", "coastal", "beach"],
+    "Bilbao": ["city", "coastal"],
+    "Salamanca": ["small town", "historic"],
+    "Seville": ["major city", "historic"],
+    "San Sebastian": ["city", "coastal", "beach"],
     "Toledo": ["small town", "historic"],
-    "Malaga": ["city", "beach"],
+    "Malaga": ["city", "coastal", "beach"],
     "Zaragoza": ["major city"],
-    "Santiago de Compostela": ["city", "historic", "coastal"],
-    "Granada": ["city", "coastal"],
-    "Alicante": ["city", "beach"],
-    "Cadiz": ["small town", "beach"],
+    "Santiago de Compostela": ["city", "historic"],
+    "Granada": ["city", "historic"],
+    "Alicante": ["city", "coastal", "beach"],
+    "Cadiz": ["small town", "coastal", "beach"],
 }
 
 # How many destinations each company should have. Companies not listed here get 5.
@@ -106,3 +106,4 @@ if __name__ == "__main__":
         data["company_colors"], data["canvas_width"], data["canvas_height"]
     )
     loader.save_coords(data["coordinates"])
+

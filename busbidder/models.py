@@ -52,7 +52,7 @@ class Profile:
             times.append(round(start + number * gap) % (24 * 60))
         return times
 
-    def minutes_until_next_bus(self, from_minutes):
+    def min_til_next_bus(self, from_minutes):
         return min((time - from_minutes) % (24 * 60) for time in self.departure_times())
 
     def random_price(self):

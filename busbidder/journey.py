@@ -89,3 +89,37 @@ def rating_allowed(offers, min_rating):
         if good:
             kept.append(offer)
     return kept
+
+def seats_available(offers):
+    # A full bus (0 seats left) can't be booked
+    kept = []
+    for offer in offers:
+        if offer.seats > 0:
+            kept.append(offer)
+    return kept
+
+def price_allowed(offers, max_price):
+    kept = []
+    for offer in offers:
+        if offer.price <= max_price:
+            kept.append(offer)
+    return kept
+
+def duration_allowed(offers, max_minutes):
+    kept = []
+    for offer in offers:
+        # For a transfer this includes the wait in Madrid
+        if offer.arrival - offer.departure <= max_minutes:
+            kept.append(offer)
+    return kept
+
+def flexibility_allowed(offers, need_change, need_refund):
+    # Ticket flexibility: can the ticket be changed and/or refunded after buying
+    kept = []
+    for offer in offers:
+        if need_change and not offer.changeable:
+            continue
+        if need_refund and not offer.refundable:
+            continue
+        kept.append(offer)
+    return kept
