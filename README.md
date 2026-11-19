@@ -29,6 +29,14 @@ uv run main.py
 uv run tests/test.py
 ```
 
+## Reproduce the traveler profile results
+
+```sh
+uv run python tools/compare_profiles.py
+```
+
+Runs every profile in `data/traveller_profile.csv` and saves the results in `output/`. `data/bookings.csv` is not changed.
+
 ## Input files (data/)
 
 | File | |
