@@ -1,0 +1,8 @@
+company,description,min_price,max_price,start_time,end_time,luggage,luggage_price,buses_per_day,speed_kmh,max_seats,rating,change,refund,case,expected
+GoodBus,Valid row,10,25,06:00,14:00,1,5,10,80,20,4.0,1,0,normal,OK
+TopRatingBus,Highest rating 5,10,25,06:00,14:00,1,5,10,80,20,5,1,0,boundary,OK
+ZeroRatingBus,Lowest rating 0,10,25,06:00,14:00,1,5,10,80,20,0,1,0,boundary,OK
+NightBus,Valid overnight window 22:00-06:00,12,28,22:00,06:00,1,5,5,80,20,4.0,1,0,boundary,OK
+EdgeBus,Free ticket and buses 00:00-23:59,0,0,00:00,23:59,1,5,10,80,20,4.0,1,0,boundary,OK
+OneBusBus,Only one bus per day,10,25,06:00,14:00,1,5,1,80,20,4.0,1,0,boundary,OK
+OneSeatBus,Only one seat on the bus,10,25,06:00,14:00,1,5,10,80,1,4.0,1,0,boundary,OK

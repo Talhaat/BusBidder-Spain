@@ -1,0 +1,3 @@
+profile,description,start,finish,time,luggage,change,refund,min_rating,max_price,max_hours,min_score,price,duration,dep_time,flexibility
+Budget,Valid row,Madrid,Zaragoza,08:00,0,0,0,0,20,Any,0,10,0,2,0
+Business,Valid row,Madrid,Zaragoza,07:00,1,1,0,3,Any,4,0,2,8,10,6

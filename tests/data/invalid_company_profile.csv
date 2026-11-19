@@ -1,25 +1,38 @@
-company,description,min_price,max_price,start_time,end_time,luggage,buses_per_day,speed_kmh,max_seats
-GoodBus,Valid row,10,25,06:00,14:00,1,10,80,20
-NegativeBus,Negative price,-5,25,06:00,14:00,1,10,80,20
-SwappedBus,Min price above max price,30,20,06:00,14:00,1,10,80,20
-BadTimeBus,Time 24:00 does not exist,10,25,24:00,06:00,1,10,80,20
-WrongFormatBus,Time written without colon,10,25,0600,14:00,1,10,80,20
-,Missing company name,10,25,06:00,14:00,1,10,80,20
-TextPriceBus,Price written as text,ten,25,06:00,14:00,1,10,80,20
-ZeroBusesBus,No buses per day,10,25,06:00,14:00,1,0,80,20
-NegativeBusesBus,Negative number of buses,10,25,06:00,14:00,1,-2,80,20
-TextBusesBus,Number of buses written as text,10,25,06:00,14:00,1,five,80,20
-HalfBusBus,Number of buses not a whole number,10,25,06:00,14:00,1,2.5,80,20
-MissingBusesBus,Number of buses missing,10,25,06:00,14:00,1,,80,20
-ZeroSpeedBus,Speed is zero,10,25,06:00,14:00,1,10,0,20
-NegativeSpeedBus,Negative speed,10,25,06:00,14:00,1,10,-50,20
-TextSpeedBus,Speed written as text,10,25,06:00,14:00,1,10,fast,20
-MissingSpeedBus,Speed missing,10,25,06:00,14:00,1,10,,20
-ZeroSeatsBus,No seats on the bus,10,25,06:00,14:00,1,10,80,0
-NegativeSeatsBus,Negative number of seats,10,25,06:00,14:00,1,10,80,-5
-TextSeatsBus,Number of seats written as text,10,25,06:00,14:00,1,10,80,many
-MissingSeatsBus,Number of seats missing,10,25,06:00,14:00,1,10,80,
-NightBus,Valid overnight window (boundary),12,28,22:00,06:00,1,5,80,20
-EdgeBus,Valid boundary values: free ticket and 00:00-23:59,0,0,00:00,23:59,1,10,80,20
-OneBusBus,Valid boundary: only one bus per day,10,25,06:00,14:00,1,1,80,20
-OneSeatBus,Valid boundary: only one seat on the bus,10,25,06:00,14:00,1,10,80,1
+company,description,min_price,max_price,start_time,end_time,luggage,luggage_price,buses_per_day,speed_kmh,max_seats,rating,change,refund,case,expected
+GoodBus,Valid row,10,25,06:00,14:00,1,5,10,80,20,4.0,1,0,normal,OK
+NegativeBus,Negative price,-5,25,06:00,14:00,1,5,10,80,20,4.0,1,0,invalid,NegativePriceError
+SwappedBus,Min price above max price,30,20,06:00,14:00,1,5,10,80,20,4.0,1,0,invalid,InvalidPriceRangeError
+BadTimeBus,Time 24:00 does not exist,10,25,24:00,06:00,1,5,10,80,20,4.0,1,0,invalid,InvalidTimeError
+WrongFormatBus,Time written without colon,10,25,0600,14:00,1,5,10,80,20,4.0,1,0,invalid,InvalidTimeError
+,Missing company name,10,25,06:00,14:00,1,5,10,80,20,4.0,1,0,missing,MissingValueError
+TextPriceBus,Price written as text,ten,25,06:00,14:00,1,5,10,80,20,4.0,1,0,invalid,ValueError
+MissingPriceBus,Max price missing,10,,06:00,14:00,1,5,10,80,20,4.0,1,0,missing,MissingValueError
+ZeroBusesBus,No buses per day,10,25,06:00,14:00,1,5,0,80,20,4.0,1,0,boundary,InvalidBusCountError
+NegativeBusesBus,Negative number of buses,10,25,06:00,14:00,1,5,-2,80,20,4.0,1,0,invalid,InvalidBusCountError
+TextBusesBus,Number of buses written as text,10,25,06:00,14:00,1,5,five,80,20,4.0,1,0,invalid,ValueError
+HalfBusBus,Number of buses not a whole number,10,25,06:00,14:00,1,5,2.5,80,20,4.0,1,0,invalid,ValueError
+MissingBusesBus,Number of buses missing,10,25,06:00,14:00,1,5,,80,20,4.0,1,0,missing,MissingValueError
+ZeroSpeedBus,Speed is zero,10,25,06:00,14:00,1,5,10,0,20,4.0,1,0,boundary,InvalidSpeedError
+NegativeSpeedBus,Negative speed,10,25,06:00,14:00,1,5,10,-50,20,4.0,1,0,invalid,InvalidSpeedError
+TextSpeedBus,Speed written as text,10,25,06:00,14:00,1,5,10,fast,20,4.0,1,0,invalid,ValueError
+MissingSpeedBus,Speed missing,10,25,06:00,14:00,1,5,10,,20,4.0,1,0,missing,MissingValueError
+ZeroSeatsBus,No seats on the bus,10,25,06:00,14:00,1,5,10,80,0,4.0,1,0,boundary,InvalidSeatCountError
+NegativeSeatsBus,Negative number of seats,10,25,06:00,14:00,1,5,10,80,-5,4.0,1,0,invalid,InvalidSeatCountError
+TextSeatsBus,Number of seats written as text,10,25,06:00,14:00,1,5,10,80,many,4.0,1,0,invalid,ValueError
+MissingSeatsBus,Number of seats missing,10,25,06:00,14:00,1,5,10,80,,4.0,1,0,missing,MissingValueError
+HighRatingBus,Rating above the 0-5 scale,10,25,06:00,14:00,1,5,10,80,20,6,1,0,invalid,InvalidRatingError
+AboveTopRatingBus,Rating just above 5,10,25,06:00,14:00,1,5,10,80,20,5.1,1,0,boundary,InvalidRatingError
+TopRatingBus,Highest rating 5,10,25,06:00,14:00,1,5,10,80,20,5,1,0,boundary,OK
+ZeroRatingBus,Lowest rating 0,10,25,06:00,14:00,1,5,10,80,20,0,1,0,boundary,OK
+TextRatingBus,Rating written as text,10,25,06:00,14:00,1,5,10,80,20,good,1,0,invalid,ValueError
+MissingRatingBus,Rating missing,10,25,06:00,14:00,1,5,10,80,20,,1,0,missing,MissingValueError
+BadChangeBus,change not 0 or 1,10,25,06:00,14:00,1,5,10,80,20,4.0,2,0,invalid,InvalidFareError
+BadRefundBus,refund written as yes,10,25,06:00,14:00,1,5,10,80,20,4.0,1,yes,invalid,InvalidFareError
+NightBus,Valid overnight window 22:00-06:00,12,28,22:00,06:00,1,5,5,80,20,4.0,1,0,boundary,OK
+EdgeBus,Free ticket and buses 00:00-23:59,0,0,00:00,23:59,1,5,10,80,20,4.0,1,0,boundary,OK
+OneBusBus,Only one bus per day,10,25,06:00,14:00,1,5,1,80,20,4.0,1,0,boundary,OK
+OneSeatBus,Only one seat on the bus,10,25,06:00,14:00,1,5,10,80,1,4.0,1,0,boundary,OK
+GoodBus,Same name as GoodBus: the row is valid but the name is a duplicate,10,25,06:00,14:00,1,5,10,80,20,4.0,1,0,duplicate,OK
+YesLuggageBus,Luggage written as yes,10,25,06:00,14:00,yes,5,10,80,20,4.0,1,0,invalid,InvalidLuggageError
+NegativeLuggageBus,Negative luggage price,10,25,06:00,14:00,1,-5,10,80,20,4.0,1,0,invalid,InvalidLuggageError
+MissingLuggagePriceBus,Luggage price missing,10,25,06:00,14:00,1,,10,80,20,4.0,1,0,missing,MissingValueError

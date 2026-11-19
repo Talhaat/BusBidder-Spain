@@ -1,0 +1,13 @@
+profile,description,start,finish,time,luggage,change,refund,min_rating,max_price,max_hours,min_score,price,duration,dep_time,flexibility
+Budget,Valid row,Madrid,Zaragoza,08:00,0,0,0,0,20,Any,0,10,0,2,0
+Business,Valid row,Madrid,Zaragoza,07:00,1,1,0,3,Any,4,0,2,8,10,6
+"",Profile name missing,Madrid,Zaragoza,08:00,0,0,0,0,Any,Any,0,5,5,5,5
+Budget,Same name as line 2,Madrid,Zaragoza,09:00,0,0,0,0,Any,Any,0,5,5,5,5
+BadPrice,Max price 25 is not in the dropdown,Madrid,Zaragoza,08:00,0,0,0,0,25,Any,0,10,0,2,0
+HalfHour,Time 08:30 is not a whole hour,Madrid,Zaragoza,08:30,0,0,0,0,Any,Any,0,5,5,5,5
+ParisTrip,Finish city not a destination,Madrid,Paris,08:00,0,0,0,0,Any,Any,0,5,5,5,5
+SameCity,Start and finish are the same,Madrid,Madrid,08:00,0,0,0,0,Any,Any,0,5,5,5,5
+YesLuggage,Luggage written as yes,Madrid,Zaragoza,08:00,yes,0,0,0,Any,Any,0,5,5,5,5
+TooImportant,Importance 11 is above 10,Madrid,Zaragoza,08:00,0,0,0,0,Any,Any,0,11,5,5,5
+AllZero,All importances 0,Madrid,Zaragoza,08:00,0,0,0,0,Any,Any,0,0,0,0,0
+NoTime,Time missing,Madrid,Zaragoza,,0,0,0,0,Any,Any,0,5,5,5,5

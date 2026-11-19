@@ -1,0 +1,625 @@
+time,file,line,name,problem
+2026-11-18 12:22:59,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:22:59,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:22:59,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:22:59,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:22:59,destination.csv,,,OK
+2026-11-18 12:22:59,company_profile.csv,,,OK
+2026-11-18 12:23:31,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:23:31,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:23:31,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:23:31,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:23:31,destination.csv,,,OK
+2026-11-18 12:23:31,company_profile.csv,,,OK
+2026-11-18 12:27:33,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:27:33,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:27:33,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:27:33,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:27:33,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:27:33,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:27:33,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:27:33,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:27:33,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:27:33,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:27:33,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:27:33,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:27:33,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:27:33,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:27:33,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:27:33,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:27:33,destination.csv,,,OK
+2026-11-18 12:27:33,company_profile.csv,,,OK
+2026-11-18 12:27:33,bus_connections.csv,,,OK
+2026-11-18 12:27:33,map_destination.csv,,,OK
+2026-11-18 12:27:33,destination_profile.csv,,,OK
+2026-11-18 12:27:33,offers.csv,,,OK
+2026-11-18 12:30:00,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:30:00,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:30:00,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:30:00,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:30:00,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:30:00,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:30:00,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:30:00,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:30:00,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:30:00,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:30:00,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:30:00,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:30:00,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:30:00,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:30:00,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:30:00,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:30:00,destination.csv,,,OK
+2026-11-18 12:30:00,company_profile.csv,,,OK
+2026-11-18 12:30:00,bus_connections.csv,,,OK
+2026-11-18 12:30:00,map_destination.csv,,,OK
+2026-11-18 12:30:00,destination_profile.csv,,,OK
+2026-11-18 12:30:00,offers.csv,,,OK
+2026-11-18 12:35:32,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:35:32,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:35:32,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:35:32,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:35:32,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:35:32,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:35:32,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:35:32,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:35:32,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:35:32,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:35:32,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:35:32,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:35:32,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:35:32,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:35:32,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:35:32,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:35:32,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 12:35:32,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 12:35:32,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:35:32,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 12:35:32,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:35:32,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 12:35:32,destination.csv,,,OK
+2026-11-18 12:35:32,company_profile.csv,,,OK
+2026-11-18 12:35:32,bus_connections.csv,,,OK
+2026-11-18 12:35:32,map_destination.csv,,,OK
+2026-11-18 12:35:32,destination_profile.csv,,,OK
+2026-11-18 12:35:32,offers.csv,,,OK
+2026-11-18 12:45:10,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:45:10,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:45:10,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:45:10,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:11,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:46:11,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:11,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:46:11,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:11,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:46:11,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:46:11,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:46:11,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:46:11,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:46:11,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:46:11,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:11,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:46:11,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:46:11,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:46:11,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:46:11,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:46:11,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 12:46:11,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 12:46:11,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:46:11,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 12:46:11,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:46:11,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 12:46:11,destination.csv,,,OK
+2026-11-18 12:46:11,company_profile.csv,,,OK
+2026-11-18 12:46:11,bus_connections.csv,,,OK
+2026-11-18 12:46:11,map_destination.csv,,,OK
+2026-11-18 12:46:11,destination_profile.csv,,,OK
+2026-11-18 12:46:11,offers.csv,,,OK
+2026-11-18 12:46:31,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:46:31,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:31,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:46:31,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:31,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:46:31,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:46:31,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:46:31,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:46:31,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:46:31,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:46:31,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:46:31,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:46:31,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:46:31,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:46:31,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:46:31,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:46:31,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 12:46:31,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 12:46:31,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:46:31,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 12:46:31,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:46:31,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 12:46:31,destination.csv,,,OK
+2026-11-18 12:46:31,company_profile.csv,,,OK
+2026-11-18 12:46:31,bus_connections.csv,,,OK
+2026-11-18 12:46:31,map_destination.csv,,,OK
+2026-11-18 12:46:31,destination_profile.csv,,,OK
+2026-11-18 12:46:31,offers.csv,,,OK
+2026-11-18 12:57:30,invalid_destination.csv,4,,destination is empty
+2026-11-18 12:57:30,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:57:30,invalid_destination.csv,6,,destination is empty
+2026-11-18 12:57:30,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 12:57:30,invalid_company_profile.csv,7,,company is empty
+2026-11-18 12:57:30,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 12:57:30,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 12:57:30,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 12:57:30,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 12:57:30,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 12:57:30,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 12:57:30,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 12:57:30,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 12:57:30,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 12:57:30,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 12:57:30,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 12:57:30,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 12:57:30,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 12:57:30,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 12:57:30,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 12:57:30,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:57:30,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 12:57:30,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 12:57:30,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 12:57:30,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 12:57:30,destination.csv,,,OK
+2026-11-18 12:57:30,company_profile.csv,,,OK
+2026-11-18 12:57:30,bus_connections.csv,,,OK
+2026-11-18 12:57:30,map_destination.csv,,,OK
+2026-11-18 12:57:30,destination_profile.csv,,,OK
+2026-11-18 12:57:30,offers.csv,,,OK
+2026-11-18 12:57:30,traveller_profile.csv,,,OK
+2026-11-18 13:05:26,invalid_destination.csv,4,,destination is empty
+2026-11-18 13:05:26,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:05:26,invalid_destination.csv,6,,destination is empty
+2026-11-18 13:05:26,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 13:05:26,invalid_company_profile.csv,7,,company is empty
+2026-11-18 13:05:26,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 13:05:26,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 13:05:26,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 13:05:26,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 13:05:26,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 13:05:26,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:05:26,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 13:05:26,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 13:05:26,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 13:05:26,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 13:05:26,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 13:05:26,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 13:05:26,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 13:05:26,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 13:05:26,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 13:05:26,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:05:26,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 13:05:26,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:05:26,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 13:05:26,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 13:05:26,destination.csv,,,OK
+2026-11-18 13:05:26,company_profile.csv,,,OK
+2026-11-18 13:05:26,bus_connections.csv,,,OK
+2026-11-18 13:05:26,map_destination.csv,,,OK
+2026-11-18 13:05:26,destination_profile.csv,,,OK
+2026-11-18 13:05:26,offers.csv,,,OK
+2026-11-18 13:05:26,traveller_profile.csv,,,OK
+2026-11-18 13:09:46,invalid_destination.csv,4,,destination is empty
+2026-11-18 13:09:46,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:09:46,invalid_destination.csv,6,,destination is empty
+2026-11-18 13:09:46,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 13:09:46,invalid_company_profile.csv,7,,company is empty
+2026-11-18 13:09:46,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 13:09:46,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 13:09:46,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 13:09:46,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 13:09:46,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 13:09:46,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:09:46,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 13:09:46,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 13:09:46,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 13:09:46,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 13:09:46,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 13:09:46,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 13:09:46,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 13:09:46,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 13:09:46,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 13:09:46,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:09:46,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 13:09:46,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:09:46,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 13:09:46,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 13:09:46,destination.csv,,,OK
+2026-11-18 13:09:46,company_profile.csv,,,OK
+2026-11-18 13:09:46,bus_connections.csv,,,OK
+2026-11-18 13:09:46,map_destination.csv,,,OK
+2026-11-18 13:09:46,destination_profile.csv,,,OK
+2026-11-18 13:09:46,offers.csv,,,OK
+2026-11-18 13:09:46,traveller_profile.csv,,,OK
+2026-11-18 13:10:56,invalid_destination.csv,4,,destination is empty
+2026-11-18 13:10:56,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:10:56,invalid_destination.csv,6,,destination is empty
+2026-11-18 13:10:56,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 13:10:56,invalid_company_profile.csv,7,,company is empty
+2026-11-18 13:10:56,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 13:10:56,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 13:10:56,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 13:10:56,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 13:10:56,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 13:10:56,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:10:56,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 13:10:56,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 13:10:56,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 13:10:56,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 13:10:56,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 13:10:56,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 13:10:56,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 13:10:56,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 13:10:56,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 13:10:56,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:10:56,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 13:10:56,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:10:56,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 13:10:56,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 13:10:56,destination.csv,,,OK
+2026-11-18 13:10:56,company_profile.csv,,,OK
+2026-11-18 13:10:56,bus_connections.csv,,,OK
+2026-11-18 13:10:56,map_destination.csv,,,OK
+2026-11-18 13:10:56,destination_profile.csv,,,OK
+2026-11-18 13:10:56,offers.csv,,,OK
+2026-11-18 13:10:56,traveller_profile.csv,,,OK
+2026-11-18 13:22:07,invalid_destination.csv,4,,destination is empty
+2026-11-18 13:22:07,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:22:07,invalid_destination.csv,6,,destination is empty
+2026-11-18 13:22:07,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 13:22:07,invalid_company_profile.csv,7,,company is empty
+2026-11-18 13:22:07,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 13:22:07,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 13:22:07,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 13:22:07,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 13:22:07,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 13:22:07,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 13:22:07,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 13:22:07,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 13:22:07,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 13:22:07,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 13:22:07,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 13:22:07,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 13:22:07,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 13:22:07,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 13:22:07,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 13:22:07,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:22:07,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 13:22:07,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 13:22:07,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 13:22:07,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 13:22:07,destination.csv,,,OK
+2026-11-18 13:22:07,company_profile.csv,,,OK
+2026-11-18 13:22:07,bus_connections.csv,,,OK
+2026-11-18 13:22:07,map_destination.csv,,,OK
+2026-11-18 13:22:07,destination_profile.csv,,,OK
+2026-11-18 13:22:07,offers.csv,,,OK
+2026-11-18 13:22:07,traveller_profile.csv,,,OK
+2026-11-18 15:07:18,invalid_destination.csv,4,,destination is empty
+2026-11-18 15:07:18,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 15:07:18,invalid_destination.csv,6,,destination is empty
+2026-11-18 15:07:18,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 15:07:18,invalid_company_profile.csv,7,,company is empty
+2026-11-18 15:07:18,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 15:07:18,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 15:07:18,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 15:07:18,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 15:07:18,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 15:07:18,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 15:07:18,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 15:07:18,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 15:07:18,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 15:07:18,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 15:07:18,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 15:07:18,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 15:07:18,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 15:07:18,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 15:07:18,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 15:07:18,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 15:07:18,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 15:07:18,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 15:07:18,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 15:07:18,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 15:07:18,destination.csv,,,OK
+2026-11-18 15:07:18,company_profile.csv,,,OK
+2026-11-18 15:07:18,bus_connections.csv,,,OK
+2026-11-18 15:07:18,map_destination.csv,,,OK
+2026-11-18 15:07:18,destination_profile.csv,,,OK
+2026-11-18 15:07:18,offers.csv,,,OK
+2026-11-18 15:07:18,traveller_profile.csv,,,OK
+2026-11-18 16:51:10,invalid_destination.csv,4,,destination is empty
+2026-11-18 16:51:10,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 16:51:10,invalid_destination.csv,6,,destination is empty
+2026-11-18 16:51:10,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 16:51:10,invalid_company_profile.csv,7,,company is empty
+2026-11-18 16:51:10,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 16:51:10,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 16:51:10,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 16:51:10,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 16:51:10,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 16:51:10,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 16:51:10,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 16:51:10,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 16:51:10,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 16:51:10,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 16:51:10,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 16:51:10,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 16:51:10,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 16:51:10,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 16:51:10,check_valid_company_profile.csv,,,"kept 7 of 34 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35]"
+2026-11-18 16:51:10,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 16:51:10,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 16:51:10,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 16:51:10,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 16:51:10,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 16:51:10,destination.csv,,,OK
+2026-11-18 16:51:10,company_profile.csv,,,OK
+2026-11-18 16:51:10,bus_connections.csv,,,OK
+2026-11-18 16:51:10,map_destination.csv,,,OK
+2026-11-18 16:51:10,destination_profile.csv,,,OK
+2026-11-18 16:51:10,offers.csv,,,OK
+2026-11-18 16:51:10,traveller_profile.csv,,,OK
+2026-11-18 17:57:36,invalid_destination.csv,4,,destination is empty
+2026-11-18 17:57:36,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 17:57:36,invalid_destination.csv,6,,destination is empty
+2026-11-18 17:57:36,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-18 17:57:36,invalid_company_profile.csv,7,,company is empty
+2026-11-18 17:57:36,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-18 17:57:36,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-18 17:57:36,invalid_bus_connections.csv,4,,company is empty
+2026-11-18 17:57:36,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-18 17:57:36,invalid_map_destination.csv,4,,destination is empty
+2026-11-18 17:57:36,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-18 17:57:36,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-18 17:57:36,invalid_destination_profile.csv,4,,destination is empty
+2026-11-18 17:57:36,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-18 17:57:36,invalid_offers.csv,8,,offer_id is empty
+2026-11-18 17:57:36,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-18 17:57:36,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-18 17:57:36,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-18 17:57:36,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-18 17:57:36,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-18 17:57:36,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 17:57:36,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-18 17:57:36,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-18 17:57:36,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-18 17:57:36,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-18 17:57:36,destination.csv,,,OK
+2026-11-18 17:57:36,company_profile.csv,,,OK
+2026-11-18 17:57:36,bus_connections.csv,,,OK
+2026-11-18 17:57:36,map_destination.csv,,,OK
+2026-11-18 17:57:36,destination_profile.csv,,,OK
+2026-11-18 17:57:36,offers.csv,,,OK
+2026-11-18 17:57:36,traveller_profile.csv,,,OK
+2026-11-19 11:17:53,invalid_destination.csv,4,,destination is empty
+2026-11-19 11:17:53,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:17:53,invalid_destination.csv,6,,destination is empty
+2026-11-19 11:17:53,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 11:17:53,invalid_company_profile.csv,7,,company is empty
+2026-11-19 11:17:53,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 11:17:53,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 11:17:53,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 11:17:53,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 11:17:53,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 11:17:53,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:17:53,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 11:17:53,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 11:17:53,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 11:17:53,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 11:17:53,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 11:17:53,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 11:17:53,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 11:17:53,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 11:17:53,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 11:17:53,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:17:53,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 11:17:53,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:17:53,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 11:17:53,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 11:17:53,destination.csv,,,OK
+2026-11-19 11:17:53,company_profile.csv,,,OK
+2026-11-19 11:17:53,bus_connections.csv,,,OK
+2026-11-19 11:17:53,map_destination.csv,,,OK
+2026-11-19 11:17:53,destination_profile.csv,,,OK
+2026-11-19 11:17:53,offers.csv,,,OK
+2026-11-19 11:17:53,traveller_profile.csv,,,OK
+2026-11-19 11:24:33,invalid_destination.csv,4,,destination is empty
+2026-11-19 11:24:33,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:24:33,invalid_destination.csv,6,,destination is empty
+2026-11-19 11:24:33,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 11:24:33,invalid_company_profile.csv,7,,company is empty
+2026-11-19 11:24:33,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 11:24:33,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 11:24:33,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 11:24:33,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 11:24:33,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 11:24:33,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:24:33,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 11:24:33,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 11:24:33,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 11:24:33,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 11:24:33,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 11:24:33,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 11:24:33,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 11:24:33,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 11:24:33,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 11:24:33,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:24:33,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 11:24:33,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:24:33,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 11:24:33,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 11:24:33,destination.csv,,,OK
+2026-11-19 11:24:33,company_profile.csv,,,OK
+2026-11-19 11:24:33,bus_connections.csv,,,OK
+2026-11-19 11:24:33,map_destination.csv,,,OK
+2026-11-19 11:24:33,destination_profile.csv,,,OK
+2026-11-19 11:24:33,offers.csv,,,OK
+2026-11-19 11:24:33,traveller_profile.csv,,,OK
+2026-11-19 11:48:22,invalid_destination.csv,4,,destination is empty
+2026-11-19 11:48:22,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:48:22,invalid_destination.csv,6,,destination is empty
+2026-11-19 11:48:22,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 11:48:22,invalid_company_profile.csv,7,,company is empty
+2026-11-19 11:48:22,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 11:48:22,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 11:48:22,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 11:48:22,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 11:48:22,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 11:48:22,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:48:22,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 11:48:22,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 11:48:22,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 11:48:22,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 11:48:22,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 11:48:22,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 11:48:22,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 11:48:22,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 11:48:22,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 11:48:22,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:48:22,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 11:48:22,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:48:22,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 11:48:22,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 11:48:22,destination.csv,,,OK
+2026-11-19 11:48:22,company_profile.csv,,,OK
+2026-11-19 11:48:22,bus_connections.csv,,,OK
+2026-11-19 11:48:22,map_destination.csv,,,OK
+2026-11-19 11:48:22,destination_profile.csv,,,OK
+2026-11-19 11:48:22,offers.csv,,,OK
+2026-11-19 11:48:22,traveller_profile.csv,,,OK
+2026-11-19 11:52:27,invalid_destination.csv,4,,destination is empty
+2026-11-19 11:52:27,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:52:27,invalid_destination.csv,6,,destination is empty
+2026-11-19 11:52:27,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 11:52:27,invalid_company_profile.csv,7,,company is empty
+2026-11-19 11:52:27,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 11:52:27,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 11:52:27,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 11:52:27,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 11:52:27,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 11:52:27,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 11:52:27,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 11:52:27,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 11:52:27,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 11:52:27,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 11:52:27,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 11:52:27,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 11:52:27,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 11:52:27,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 11:52:27,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 11:52:27,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:52:27,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 11:52:27,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 11:52:27,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 11:52:27,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 11:52:27,destination.csv,,,OK
+2026-11-19 11:52:27,company_profile.csv,,,OK
+2026-11-19 11:52:27,bus_connections.csv,,,OK
+2026-11-19 11:52:27,map_destination.csv,,,OK
+2026-11-19 11:52:27,destination_profile.csv,,,OK
+2026-11-19 11:52:27,offers.csv,,,OK
+2026-11-19 11:52:27,traveller_profile.csv,,,OK
+2026-11-19 15:35:54,invalid_destination.csv,4,,destination is empty
+2026-11-19 15:35:54,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 15:35:54,invalid_destination.csv,6,,destination is empty
+2026-11-19 15:35:54,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 15:35:54,invalid_company_profile.csv,7,,company is empty
+2026-11-19 15:35:54,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 15:35:54,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 15:35:54,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 15:35:54,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 15:35:54,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 15:35:54,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 15:35:54,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 15:35:54,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 15:35:54,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 15:35:54,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 15:35:54,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 15:35:54,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 15:35:54,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 15:35:54,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 15:35:54,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 15:35:54,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 15:35:54,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 15:35:54,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 15:35:54,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 15:35:54,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 15:35:54,destination.csv,,,OK
+2026-11-19 15:35:54,company_profile.csv,,,OK
+2026-11-19 15:35:54,bus_connections.csv,,,OK
+2026-11-19 15:35:54,map_destination.csv,,,OK
+2026-11-19 15:35:54,destination_profile.csv,,,OK
+2026-11-19 15:35:54,offers.csv,,,OK
+2026-11-19 15:35:54,traveller_profile.csv,,,OK
+2026-11-19 15:37:18,invalid_destination.csv,4,,destination is empty
+2026-11-19 15:37:18,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 15:37:18,invalid_destination.csv,6,,destination is empty
+2026-11-19 15:37:18,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 15:37:18,invalid_company_profile.csv,7,,company is empty
+2026-11-19 15:37:18,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 15:37:18,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 15:37:18,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 15:37:18,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 15:37:18,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 15:37:18,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 15:37:18,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 15:37:18,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 15:37:18,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 15:37:18,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 15:37:18,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 15:37:18,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 15:37:18,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 15:37:18,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 15:37:18,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 15:37:18,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 15:37:18,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 15:37:18,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 15:37:18,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 15:37:18,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 15:37:18,destination.csv,,,OK
+2026-11-19 15:37:18,company_profile.csv,,,OK
+2026-11-19 15:37:18,bus_connections.csv,,,OK
+2026-11-19 15:37:18,map_destination.csv,,,OK
+2026-11-19 15:37:18,destination_profile.csv,,,OK
+2026-11-19 15:37:18,offers.csv,,,OK
+2026-11-19 15:37:18,traveller_profile.csv,,,OK
+2026-11-19 17:34:53,invalid_destination.csv,4,,destination is empty
+2026-11-19 17:34:53,invalid_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 17:34:53,invalid_destination.csv,6,,destination is empty
+2026-11-19 17:34:53,invalid_destination.csv,8,Toledo,listed twice (first on line 3)
+2026-11-19 17:34:53,invalid_company_profile.csv,7,,company is empty
+2026-11-19 17:34:53,invalid_company_profile.csv,35,GoodBus,listed twice (first on line 2)
+2026-11-19 17:34:53,invalid_bus_connections.csv,3,CostaLink,'Valencia' is listed twice in destinations
+2026-11-19 17:34:53,invalid_bus_connections.csv,4,,company is empty
+2026-11-19 17:34:53,invalid_bus_connections.csv,5,SolRuta,listed twice (first on line 2)
+2026-11-19 17:34:53,invalid_map_destination.csv,4,,destination is empty
+2026-11-19 17:34:53,invalid_map_destination.csv,5,Toledo,listed twice (first on line 3)
+2026-11-19 17:34:53,invalid_destination_profile.csv,3,Malaga,'beach' is listed twice in categories
+2026-11-19 17:34:53,invalid_destination_profile.csv,4,,destination is empty
+2026-11-19 17:34:53,invalid_destination_profile.csv,5,Barcelona,listed twice (first on line 2)
+2026-11-19 17:34:53,invalid_offers.csv,8,,offer_id is empty
+2026-11-19 17:34:53,invalid_offers.csv,35,SOL-00001,listed twice (first on line 2)
+2026-11-19 17:34:53,invalid_traveller_profile.csv,4,,profile is empty
+2026-11-19 17:34:53,invalid_traveller_profile.csv,5,Budget,listed twice (first on line 2)
+2026-11-19 17:34:53,check_valid_destination.csv,,,"kept 3 of 7 rows, removed lines [4, 5, 6, 8]"
+2026-11-19 17:34:53,check_valid_company_profile.csv,,,"kept 7 of 37 rows, removed lines [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 35, 36, 37, 38]"
+2026-11-19 17:34:53,check_valid_bus_connections.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 17:34:53,check_valid_map_destination.csv,,,"kept 2 of 4 rows, removed lines [4, 5]"
+2026-11-19 17:34:53,check_valid_destination_profile.csv,,,"kept 1 of 4 rows, removed lines [3, 4, 5]"
+2026-11-19 17:34:53,check_valid_offers.csv,,,"kept 9 of 34 rows, removed lines [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]"
+2026-11-19 17:34:53,check_valid_traveller_profile.csv,,,"kept 2 of 12 rows, removed lines [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+2026-11-19 17:34:53,destination.csv,,,OK
+2026-11-19 17:34:53,company_profile.csv,,,OK
+2026-11-19 17:34:53,bus_connections.csv,,,OK
+2026-11-19 17:34:53,map_destination.csv,,,OK
+2026-11-19 17:34:53,destination_profile.csv,,,OK
+2026-11-19 17:34:53,offers.csv,,,OK
+2026-11-19 17:34:53,traveller_profile.csv,,,OK
