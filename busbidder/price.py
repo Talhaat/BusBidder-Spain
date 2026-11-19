@@ -2,8 +2,9 @@
 
 import math
 
+# File to turn map into distance and price.
+
 def price_from_distance(distance, min_distance, max_distance, min_price, max_price):
-    # No range to scale across (e.g. only one possible path)
     if min_distance == max_distance:
         return round(min_price, 2)
 

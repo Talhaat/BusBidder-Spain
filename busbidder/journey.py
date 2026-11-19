@@ -90,8 +90,8 @@ def rating_allowed(offers, min_rating):
             kept.append(offer)
     return kept
 
+# A full bus (0 seats left) can't be booked
 def seats_available(offers):
-    # A full bus (0 seats left) can't be booked
     kept = []
     for offer in offers:
         if offer.seats > 0:
@@ -113,8 +113,8 @@ def duration_allowed(offers, max_minutes):
             kept.append(offer)
     return kept
 
+# Ticket flexibility: can the ticket be changed and/or refunded after buying
 def flexibility_allowed(offers, need_change, need_refund):
-    # Ticket flexibility: can the ticket be changed and/or refunded after buying
     kept = []
     for offer in offers:
         if need_change and not offer.changeable:

@@ -32,7 +32,7 @@ def trip_offer(company,
                coords,
                madrid_x,
                madrid_y):
-    arr = dep + company.travel_minutes(start, finish, coords, madrid_x, madrid_y)
+    arr = dep + company.travel_min(start, finish, coords, madrid_x, madrid_y)
 
     price = company.price_between(start, finish,coords, madrid_x, madrid_y)
     # Rush hours cost 20 % more, so buses of the same company and trip get different prices

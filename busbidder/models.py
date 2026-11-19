@@ -9,7 +9,7 @@ import random
 import price
 import routes
 import validation
-from exceptions import DataError
+from exceptions import DataError, MissingFileError
 from timing import to_minutes, to_time_text, to_duration_text
 
 logger = logging.getLogger(__name__)
@@ -37,9 +37,9 @@ class Profile:
         self.refund = refund
 
 
+    # First bus at start_time, last bus at end_time, the rest evenly in between
+    # Times are minutes after midnight, like 510 for 08:30
     def departure_times(self):
-        # First bus at start_time, last bus at end_time, the rest evenly in between
-        # Times are minutes after midnight, like 510 for 08:30
         start = self.start_time
         end = self.end_time
         window = (end - start) % (24 * 60)      # % makes overnight windows like 22:00-06:00 work too
@@ -52,12 +52,9 @@ class Profile:
             times.append(round(start + number * gap) % (24 * 60))
         return times
 
-    def min_til_next_bus(self, from_minutes):
-        return min((time - from_minutes) % (24 * 60) for time in self.departure_times())
-
-    def random_price(self):
-        return round(random.uniform(self.min_price, self.max_price), 2)
-
+    def min_til_next_bus(self, start_min):
+        return min((time - start_min) % (24 * 60) for time in self.departure_times())
+    
 class Company:
     def __init__(self, name, profile, ID):
         self.name = name
@@ -90,7 +87,7 @@ class Company:
             points[destination] = coordinates[destination]
         return points, routes.minimum_spanning_tree(points)
 
-    def travel_minutes(self, start, finish, coordinates, madrid_x, madrid_y):
+    def travel_min(self, start, finish, coordinates, madrid_x, madrid_y):
         points, edges = self.route_tree(coordinates, madrid_x, madrid_y)
         km = price.path_distance(start, finish, points, edges) * km_per_pixel
         return round(km / self.profile.speed_kmh * 60)
@@ -109,6 +106,89 @@ class Destination:
     def to_row(self):
         return [self.name, ";".join(self.categories)]
 
+class TravellerProfile:
+    def __init__(self, name, description, start, finish, time, luggage, change, refund, min_rating, max_price, max_hours, min_score, importance):
+        self.name = name
+        self.description = description
+        self.start = start
+        self.finish = finish
+        self.time = time
+        # Must have boxes: True = ticked
+        self.luggage = luggage
+        self.change = change
+        self.refund = refund
+        # Kept as text, they are dropdown choices like "Any" or "40"
+        self.min_rating = min_rating
+        self.max_price = max_price
+        self.max_hours = max_hours
+        self.min_score = min_score
+        # Preferences: criterion name -> importance 0-10, the same names as the ranking registry
+        self.importance = importance
+
+    # Build a TravellerProfile from a csv row dict
+    @classmethod
+    def from_dict(cls, data):
+        importance = {}
+        for name in ["price", "duration", "dep_time", "flexibility"]:
+            importance[name] = int(data[name])
+        return cls(
+            data["profile"],
+            data["description"],
+            data["start"],
+            data["finish"],
+            data["time"],
+            data["luggage"] == "1",
+            data["change"] == "1",
+            data["refund"] == "1",
+            data["min_rating"],
+            data["max_price"],
+            data["max_hours"],
+            data["min_score"],
+            importance
+        )
+
+class Booking:
+    def __init__(self, reference, time, offer_id, profile, seats, price, changeable, refundable, payment):
+        self.reference = reference
+        self.time = time
+        # One offer id for a direct bus, two joined with + for a transfer
+        self.offer_id = offer_id
+        self.profile = profile
+        self.seats = seats
+        self.price = price
+        # Fare conditions are stored with the booking, like the spec asks
+        self.changeable = changeable
+        self.refundable = refundable
+        self.payment = payment
+
+    # Build a Booking from a csv row dict
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            data["reference"],
+            data["time"],
+            data["offer_id"],
+            data["profile"],
+            int(data["seats"]),
+            float(data["price"]),
+            data["changeable"] == "True",
+            data["refundable"] == "True",
+            data["payment"]
+        )
+
+    def to_row(self):
+        return [
+            self.reference,
+            self.time,
+            self.offer_id,
+            self.profile,
+            self.seats,
+            self.price,
+            self.changeable,
+            self.refundable,
+            self.payment
+        ]
+
 #---------------------------CLASSES/DICT-------------------------------------------
 
 def load_destinations(path):
@@ -120,6 +200,9 @@ def load_destinations(path):
     return destinations
 
 def load_companies(path):
+    # company_profile.csv is base data: it can't be generated, so stop with a clear error
+    if not os.path.exists(path):
+        raise MissingFileError(f"{os.path.basename(path)} is missing from the data folder")
     companies = []
     with open(path, newline="") as file:
         reader = csv.DictReader(file)

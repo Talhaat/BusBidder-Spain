@@ -6,8 +6,8 @@ import csv
 import logging
 
 import validation
-from exceptions import DataError
-from models import Destination, Offer
+from exceptions import DataError, MissingFileError, InvalidProfileError
+from models import Destination, Offer, TravellerProfile, Booking
 from offers import make_offer
 
 logger = logging.getLogger(__name__)
@@ -23,9 +23,69 @@ company_path = os.path.join(data_folder, "company_profile.csv")
 conn_path = os.path.join(data_folder, "bus_connections.csv")
 prof_path = os.path.join(data_folder, "destination_profile.csv")
 offers_path = os.path.join(data_folder, "offers.csv")
+traveller_path = os.path.join(data_folder, "traveller_profile.csv")
+bookings_path = os.path.join(data_folder, "bookings.csv")
+
+#---------------------------BOOKINGS-------------------------------------------
+def load_bookings(offers_by_id):
+    # bookings.csv is made by the app at the first booking: no file means no bookings yet
+    bookings = []
+    if not os.path.exists(bookings_path):
+        return bookings
+    with open(bookings_path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Bad rows are logged and skipped, the rest of the file still loads
+            try:
+                validation.validate_booking_row(row, offers_by_id)
+            except (DataError, ValueError) as error:
+                logger.warning(f"bookings.csv line {reader.line_num}: rejected {row.get('reference')!r}: {error}")
+                validation.save_error(error, "bookings.csv", reader.line_num, row)
+                continue
+            bookings.append(Booking.from_dict(row))
+    logger.info(f"Loaded {len(bookings)} bookings from bookings.csv")
+    return bookings
+
+# New bookings are added at the end
+def save_booking(booking):
+    new_file = not os.path.exists(bookings_path)
+    with open(bookings_path, "a", newline="") as f:
+        writer = csv.writer(f)
+        if new_file:
+            writer.writerow(validation.booking_columns)
+        writer.writerow(booking.to_row())
+    logger.info(f"Saved booking {booking.reference} for offer {booking.offer_id}")
+
+#---------------------------TRAVELLER PROFILES-------------------------------------------
+# traveller_profile.csv is optional, written by hand: one row per customer type to fill the search page
+def load_traveller_profiles(places):
+    # Without it the program still runs, the search page then only has "Custom"
+    profiles = {}
+    if not os.path.exists(traveller_path):
+        logger.info("No traveller_profile.csv: only Custom search")
+        return profiles
+    with open(traveller_path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Bad rows are logged and skipped, the rest of the file still loads
+            try:
+                validation.validate_profile_row(row, places)
+                if row["profile"] in profiles:
+                    raise InvalidProfileError(f"profile '{row['profile']}' is listed twice")
+            except (DataError, ValueError) as error:
+                logger.warning(f"traveller_profile.csv line {reader.line_num}: rejected {row.get('profile')!r}: {error}")
+                validation.save_error(error, "traveller_profile.csv", reader.line_num, row)
+                continue
+            profile = TravellerProfile.from_dict(row)
+            profiles[profile.name] = profile
+    logger.info(f"Loaded {len(profiles)} traveller profiles from traveller_profile.csv")
+    return profiles
 
 #---------------------------DESTINATIONS-------------------------------------------
 def load_destinations():
+    # destination.csv is base data: it can't be generated, so stop with a clear error
+    if not os.path.exists(dest_path):
+        raise MissingFileError(f"{os.path.basename(dest_path)} is missing from the data folder")
     places = []
     with open(dest_path, newline="") as f:
         reader = csv.DictReader(f)

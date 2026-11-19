@@ -1,0 +1,14 @@
+reference,time,offer_id,profile,seats,price,changeable,refundable,payment
+BB-00001,2026-11-18 13:12,SOL-02770,Custom,1,15.86,False,False,paid (simulated)
+BB-00002,2026-11-18 13:14,SOL-04682,Custom,1,15.18,False,False,paid (simulated)
+BB-00003,2026-11-18 13:17,COS-05056,Custom,1,25.84,False,False,paid (simulated)
+BB-00004,2026-11-19 11:24,SOL-00446,Budget traveller 1,1,11.02,False,False,paid (simulated)
+BB-00005,2026-11-19 11:26,SOL-00446,Budget traveller 2,1,11.02,False,False,paid (simulated)
+BB-00006,2026-11-19 11:29,NOC-00325,Business traveller,1,13.21,True,False,paid (simulated)
+BB-00007,2026-11-19 11:30,VER-00713,Flexible tourist,1,19.66,True,True,paid (simulated)
+BB-00008,2026-11-19 11:50,VER-07049+COS-00091,Quality traveller,1,52.22,False,False,paid
+BB-00009,2026-11-19 14:05,SOL-00446,Budget traveller 1,1,11.02,False,False,paid
+BB-00010,2026-11-19 14:30,VER-07049+COS-00091,Transfer traveller,1,52.22,False,False,paid
+BB-00011,2026-11-19 14:35,SOL-00446,Budget traveller 2,1,11.02,False,False,paid
+BB-00012,2026-11-19 14:39,NOC-00325,Business traveller,1,13.21,True,False,paid
+BB-00013,2026-11-19 14:40,NOC-00325,Business traveller,1,13.21,True,False,paid

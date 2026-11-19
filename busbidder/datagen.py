@@ -1,5 +1,6 @@
 # File for loading or generating all the data the app needs
 
+import booking
 import loader
 import models
 import routes
@@ -79,6 +80,15 @@ def generate_data():
     places = ["Madrid"] + destinations
     offers = loader.load_or_gen_offers(companies, places, coordinates, madrid_x, madrid_y)
 
+    # Bookings saved earlier take their seats off the offers, so a full bus is not shown again
+    offers_by_id = {}
+    for offer in offers:
+        offers_by_id[offer.offer_id] = offer
+    bookings = booking.apply_bookings(loader.load_bookings(offers_by_id), offers_by_id)
+
+    # Read the customer types from traveller_profile.csv, the search page can fill its choices from them
+    traveller_profiles = loader.load_traveller_profiles(places)
+
     # Generate or load destination profiles, save to destination_profile.csv
     destination_profiles = loader.load_or_gen_profiles(destinations, destination_categories)
     loader.save_profiles(destination_profiles)
@@ -95,6 +105,9 @@ def generate_data():
         "canvas_height": canvas_height,
         "destination_profiles": destination_profiles,
         "offers": offers,
+        "traveller_profiles": traveller_profiles,
+        "offers_by_id": offers_by_id,
+        "bookings": bookings,
     }
 
 if __name__ == "__main__":

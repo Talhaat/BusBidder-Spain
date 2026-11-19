@@ -1,0 +1,6 @@
+profile,description,start,finish,time,luggage,change,refund,min_rating,max_price,max_hours,min_score,price,duration,dep_time,flexibility
+Budget traveller 1,Cheapest ticket matters most and travel time does not,Madrid,Malaga,08:00,0,0,0,0,20,Any,0,10,0,2,0
+Budget traveller 2,Cheapest ticket matters most and travel time does not,Madrid,Malaga,08:00,0,0,0,0,20,Any,0,10,0,2,0
+Business traveller,Needs luggage and a changeable ticket and wants to leave on time,Madrid,Malaga,07:00,1,1,0,3,Any,Any,0,2,8,10,6
+Flexible tourist,Needs a ticket that can be refunded,Madrid,Malaga,10:00,1,0,1,0,Any,Any,0,4,2,1,10
+Transfer traveller,Only travels with companies rated 4 or higher,Cordoba,Valencia,08:00,0,0,0,4,Any,Any,0,8,5,3,4

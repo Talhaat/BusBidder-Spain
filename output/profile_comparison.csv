@@ -1,0 +1,11 @@
+profile,rank,offer_id,company,day,departure,arrival,duration,price,changeable,refundable,seats,score,price_score,duration_score,dep_time_score,flexibility_score,explanation
+Budget traveller 1,1,SOL-00446,SolRuta,1,08:06,10:21,135,11.02,False,False,4,10.0,10.0,0.0,9.9,0,"lowest price, highest travel time, lowest flexibility"
+Budget traveller 1,2,NOC-00325,NocheVia,1,06:00,07:51,111,13.21,True,False,9,7.6,7.5,10.0,8.3,5.0,"medium price, lowest travel time, highest flexibility"
+Budget traveller 1,3,COS-00181,CostaLink,1,12:00,13:58,118,16.15,False,False,18,4.5,4.1,7.1,6.6,0,"highest price, medium travel time, lowest flexibility"
+Budget traveller 2,1,SOL-00446,SolRuta,1,08:06,10:21,135,11.02,False,False,3,10.0,10.0,0.0,9.9,0,"lowest price, highest travel time, lowest flexibility"
+Budget traveller 2,2,NOC-00325,NocheVia,1,06:00,07:51,111,13.21,True,False,9,7.6,7.5,10.0,8.3,5.0,"medium price, lowest travel time, highest flexibility"
+Budget traveller 2,3,COS-00181,CostaLink,1,12:00,13:58,118,16.15,False,False,18,4.5,4.1,7.1,6.6,0,"highest price, medium travel time, lowest flexibility"
+Business traveller,1,NOC-00325,NocheVia,1,06:00,07:51,111,13.21,True,False,9,8.5,10.0,10.0,9.2,5.0,"lowest price, lowest travel time, lowest flexibility"
+Business traveller,2,VER-00703,VerdeBus,1,07:04,09:10,126,19.66,True,True,8,6.1,0.0,0.0,9.9,10.0,"highest price, highest travel time, highest flexibility"
+Flexible tourist,1,VER-00713,VerdeBus,1,09:56,12:02,126,19.66,True,True,5,10.0,10,10,9.9,10.0,the only offer that matches your choices
+Transfer traveller,1,VER-07049+COS-00091,VerdeBus,1,20:13,19:55,1422,52.22,False,False,4,6.5,10,10.0,0.1,0,the only offer that matches your choices

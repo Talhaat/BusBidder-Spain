@@ -16,6 +16,12 @@ logging.basicConfig(filename=log_path, level=logging.INFO, format="%(asctime)s %
 
 
 from gui.bus_gui import run
+from exceptions import MissingFileError
 
-run()
+# A missing base csv file stops the app with a clear message instead of a crash
+try:
+    run()
+except MissingFileError as error:
+    logging.error(f"Can't start: {error}")
+    print(f"Can't start: {error}")
 

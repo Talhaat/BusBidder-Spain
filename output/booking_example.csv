@@ -1,0 +1,6 @@
+reference,time,offer_id,profile,seats,price,changeable,refundable,payment
+BB-00009,2026-11-19 11:52,SOL-00446,Budget traveller 1,1,11.02,False,False,paid
+BB-00010,2026-11-19 11:52,SOL-00446,Budget traveller 2,1,11.02,False,False,paid
+BB-00011,2026-11-19 11:52,NOC-00325,Business traveller,1,13.21,True,False,paid
+BB-00012,2026-11-19 11:52,VER-00713,Flexible tourist,1,19.66,True,True,paid
+BB-00013,2026-11-19 11:52,VER-07049+COS-00091,Transfer traveller,1,52.22,False,False,paid
