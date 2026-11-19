@@ -1,6 +1,6 @@
 # BusBidder Spain
 
-Final project in ACIT4420 Problem-solving with scripting, OsloMet,  2026. A bus marketplace with 5 fictional companies and 15 destinations in Spain. The traveler sets must-haves and preferences, the program removes the offers that break a must-have, ranks the rest with a weighted score and lets the traveller book a seat.
+Final project in ACIT4420 Problem-solving with scripting, OsloMet,  2026. A bus marketplace with 5 fictional companies and 15 destinations in Spain. The traveler sets must-haves and preferences, the program removes the offers that break a must-have, ranks the rest with a weighted score and lets the traveler book a seat.
 
 ## Prerequisites
 
@@ -29,20 +29,12 @@ uv run main.py
 uv run tests/test.py
 ```
 
-## Reproduce the traveller profile results
-
-```sh
-uv run python tools/compare_profiles.py
-```
-
-Runs every profile in `data/traveller_profile.csv` and saves the results in `output/`. `data/bookings.csv` is not changed.
-
 ## Input files (data/)
 
 | File | |
 |---|---|
 | `destination.csv`, `company_profile.csv` | Base data, needed to run |
-| `traveller_profile.csv` | Optional, fills the Traveller profile dropdown |
+| `traveller_profile.csv` | Optional, fills the Traveler profile dropdown |
 | `bus_connections.csv`, `map_destination.csv`, `destination_profile.csv`, `offers.csv` | Generated if missing. Delete one to get new random data |
 | `bookings.csv` | Saved bookings, written by the program |
 | `error.csv` | Rows that failed validation |
